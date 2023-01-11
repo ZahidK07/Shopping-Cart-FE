@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--poppins-regulua);
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins-medium;
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppins-semi-bold;
+    src: url(./fonts/Poppins-SemiBold.ttf);
+}
+
+:root{
+    --textClr: #4f4f4f ;
+    --p: #6c757d;
+    --poppins-reguluar: poppins-regular;
+    
+}
+
+
+/*=================== Left Div and Right Div =====================*/
+
+/* .container-fluid{
+    background: rgb(241, 241, 241);
+} */
+
+.main{
+    background: #ffffff;
+}
+
+.card{
+    border: none;
+}
+
+.prodcut_img{
+    min-width: 200px;
+    max-height: 250px;
+}
+
+.card-title h3{
+    font-weight: 500;
+    font-size: 23px; 
+}
+
+a{
+    color: var(--textClr);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--textClr);
+    text-decoration: none;
+}
+
+p{
+    color: var(--p);
+}
+
+.card-title h2{
+    font-size: 1.3em;
+}
+
+
+.quantity{
+    position: relative;
+
+}
+
+.quantity::after{
+    content: "(1 Piece)";
+    width: auto;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    font-size: 0.8rem;
+    bottom: -20px;
+    right: 2rem;
+}
+
+.page-link{
+    line-height: 14px;
+    width: 45px;
+    font-size: 0.8rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #495057;
+}
+
+.delete_addFav p{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.fa-heart:hover{
+    color: red;
+}
+
+.fa-trash-alt:hover{
+    color: blue;
+}
+
+/*=================== Left Div and Right Div =====================*/

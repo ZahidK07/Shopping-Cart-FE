@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./Stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="./Stylesheets/index.css">
+    <title>Shopping Cart</title>
+</head>
+<body class="bg-light">
+    <!-- 1st Product -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-11 mx-auto">
+                <div class="row mt-5 gx-3">
+
+                    <!-- Left Div -->
+                    <div class="col-md-12 col-lg-8 col-11 mx-auto mb-lg-0 mb-5 shadow main">
+                        <div class="card p-4">
+                            <h2 class="py-4 font-weight-bold">Cart (2 itmes)</h2>
+                            <div class="row">
+                                
+                                <!-- image Div -->
+                                <div class="col-md-4 col-11 mx-auto bg-white d-flex 
+                                            justify-content-centeralign-items-center shadow prodcut_img">
+                                    <img class="img-fluid" src="./images/hoodie_.jpg" alt="iPhone 14">
+                                </div>
+
+                                <!-- Product details -->
+                                <div class="col-md-8 col-11 mx-auto px-4 mt-2">
+                                    <div class="row">
+
+                                        <!-- Product name -->
+                                        <div class="col-6 card-title">
+                                            <h2 class="mb-4 product_name">Full Sleeve Hoodie</h2>
+                                            <p class="mb-2">Color : White, Blue</p>
+                                            <p class="mb-2">Size  : M</p>
+                                            <p class="mb-3">Type  : Winter Wear</p>
+                                        </div>
+
+                                        <!-- Product Quantity -->
+                                        <div class="col-6 ">
+                                            <ul class="pagination justify-content-end quantity">
+                                                <li class="page-item"><button class="page-link" onclick="removeCount()"> <i class="fa-solid fa-minus"></i> </button></li>
+                                                <li class="page-item"><input type="text" name="" class="page-link" value="1" id="cart-count"></a></li>
+                                                <li class="page-item"><button class="page-link" onclick="addCount()"> <i class="fa-solid fa-plus"></i> </button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Delete and add to favourite -->
+                                    <div class="row">
+                                        <div class="col-md-12 col-8 d-flex justify-content-between delete_addFav">
+                                            <p> <i class="fas fa-trash-alt"></i> Remove Item</p>
+                                            <p> <i class="fas fa-heart"></i> Add to Favourite</p>
+                                            <h3>&#8377;<span>0.00</span></h3>
+                                            <!-- <div class="col-4 d-flex justify-content-end amount">
+                                                <h4>RS<span id="amount-val">1200</span></h4>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        
+                        <!-- 2nd Product -->
+                        <div class="card p-4">
+                            <div class="row">
+                                
+                                <!-- image Div -->
+                                <div class="col-md-4 col-11 mx-auto bg-white d-flex 
+                                            justify-content-centeralign-items-center shadow prodcut_img">
+                                    <img class="img-fluid" src="./images/mens-turtleneck-500x500.webp" alt="iPhone 14">
+                                </div>
+
+                                <!-- Product details -->
+                                <div class="col-md-8 col-11 mx-auto px-4 mt-2">
+                                    <div class="row">
+
+                                        <!-- Product name -->
+                                        <div class="col-6 card-title">
+                                            <h2 class="mb-4 product_name">Turtle Neck T-shirt</h2>
+                                            <p class="mb-2">Color : Red</p>
+                                            <p class="mb-2">Size  : M</p>
+                                            <p class="mb-3">Type  : Winter Wear</p>
+                                        </div>
+
+                                        <!-- Product Quantity -->
+                                        <div class="col-6 ">
+                                            <ul class="pagination justify-content-end quantity">
+                                                <li class="page-item"><button class="page-link" onclick="removeCount()"> <i class="fa-solid fa-minus"></i> </button></li>
+                                                <li class="page-item"><input type="text" name="" class="page-link" value="1" id="cart-count"></a></li>
+                                                <li class="page-item"><button class="page-link" onclick="addCount()"> <i class="fa-solid fa-plus"></i> </button></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Delete and add to favourite -->
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-8 d-flex justify-content-between delete_addFav">
+                                                <p> <i class="fas fa-trash-alt"></i> Remove Item</p>
+                                                <p> <i class="fas fa-heart"></i> Add to Favourite</p>
+                                                <h3>&#8377;<span>0.00</span></h3>
+                                                <!-- <div class="col-4 d-flex justify-content-end amount">
+                                                    <h4>RS<span id="amount-val">1200</span></h4>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Div -->
+                    <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+                        <div class="checkout-box p-3 shadow bg-white">
+                            <h3 class="product_name mb-5 ">Total Amount</h3>
+                            <div class="price-per-product d-flex justify-content-between">
+                                <p>Product Amount</p>
+                                <p>&#8377;<span>0.00</span></p>
+                            </div>
+                            <div class="price-per-product d-flex justify-content-between">
+                                <p>Shipping Charge</p>
+                                <p>&#8377;<span>0.00</span></p>
+                            </div>
+                            <hr/>
+                            <div class="total-amt d-flex justify-content-between font-weight-bold ">
+                                <p>The Total amount of (Inc of All Taxes)</p>
+                                <p class="fw-bold">&#8377;<span id="total-cart-amt">0.00</span></p>
+                            </div>
+                            <button class="btn btn-primary text-uppercase">Check Out</button>
+                        </div>
+
+                        <!-- Discount and Coupon -->
+                        <div class="discount-code mt-3 shadow ">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a class="d-flex justify-content-between" data-toggle="collapse" href="#collapseExample" 
+                                     aria-expanded="false" aria-controls="collapseExample">Discount Code (Optional)
+                                     <span> <i class="fas fa-chevron-down pt-1" ></i> </span>  
+                                    </a>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="mt-3">
+                                            <input type="text" name="" id="Discount-code1" class="form-control fw-bold" placeholder="Enter The Discount Code">
+                                            <small id="error-through" class="text-dark mt-3">Code is ZK45</small>
+                                        </div>
+                                        <button class="btn btn-primary btn-sm mt-3" onclick="DiscountCode()">Apply</button>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Delivery Info -->
+                        <div class="mt-3 shadow p-3 bg-white">
+                            <div class="p-4">
+                                <h5 class="mb-4">Expected Delivery</h5>
+                                <p>20th Jan 2023 - 22nd Jan 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./JS/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
